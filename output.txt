@@ -1,0 +1,30 @@
+.F.F.F
+
+Failures:
+
+  1) StaticPages About page should have the title 'About Us'
+     Failure/Error: expect(page).to have_title("Ruby on Rails Tutorial Sample App | About Us")
+       expected #has_title?("Ruby on Rails Tutorial Sample App | About Us") to return true, got false
+     # ./spec/requests/static_pages_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  2) StaticPages Help page should have the title 'Help'
+     Failure/Error: expect(page).to have_title("Ruby on Rails Tutorial Sample App | Help")
+       expected #has_title?("Ruby on Rails Tutorial Sample App | Help") to return true, got false
+     # ./spec/requests/static_pages_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+  3) StaticPages Home page should have the title 'Home'
+     Failure/Error: expect(page).to have_title("Ruby on Rails Tutorial Sample App | Home")
+       expected #has_title?("Ruby on Rails Tutorial Sample App | Home") to return true, got false
+     # ./spec/requests/static_pages_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+Finished in 0.03881 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/static_pages_spec.rb:33 # StaticPages About page should have the title 'About Us'
+rspec ./spec/requests/static_pages_spec.rb:22 # StaticPages Help page should have the title 'Help'
+rspec ./spec/requests/static_pages_spec.rb:11 # StaticPages Home page should have the title 'Home'
+
+Randomized with seed 60032
+
